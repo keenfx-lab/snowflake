@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "godruoyi/php-snowflake": "^3.0"
     },
     "require-dev": {
