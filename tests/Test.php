@@ -1,17 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Snowflake\Tests;
 
-use Snowflake\ServiceProvider;
 use Orchestra\Testbench\TestCase;
+use Snowflake\ServiceProvider;
 
 class Test extends TestCase
 {
     /**
      * Setup the test environment.
-     *
      */
-    protected function setUp() : void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -19,7 +20,7 @@ class Test extends TestCase
     }
 
     /** @test */
-    public function it_can_resolve_the_snowflake_service_and_generate_an_identifier() : void
+    public function it_can_resolve_the_snowflake_service_and_generate_an_identifier(): void
     {
         $this->assertTrue(is_string(resolve('snowflake')->id()));
 
@@ -27,7 +28,7 @@ class Test extends TestCase
     }
 
     /** @test */
-    public function it_can_generate_a_snowflake_identifier_using_the_global_helper() : void
+    public function it_can_generate_a_snowflake_identifier_using_the_global_helper(): void
     {
         $this->assertTrue(is_string(snowflake()));
 

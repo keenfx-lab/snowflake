@@ -1,4 +1,6 @@
-<?php declare(strict_types = 1);
+<?php
+
+declare(strict_types=1);
 
 use Godruoyi\Snowflake\RandomSequenceResolver;
 
@@ -52,7 +54,7 @@ return [
     |
     */
 
-    'start_timestamp' => '2022-01-01',
+    'start_timestamp' => '2024-01-01',
 
     /*
     |--------------------------------------------------------------------------
